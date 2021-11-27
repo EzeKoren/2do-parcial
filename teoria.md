@@ -1,0 +1,3 @@
+# Teoría
+
+1. Hay varias maneras de terminar un proceso hijo usando funciones integradas en C. Las principales son enviando un `SIGKILL` o `SIGTERM`. Cabe destacar que `SIGTERM` envía una señal al programa que se debe interrumpir el funcionamiento, y le permite al developer realizar tareas antes de terminar el proceso; mientras `SIGKILL` interrumpe el funcionamiento directamente y corta el proceso sin terminar. Si el proceso padre es un proceso de terminal (como `bash`) el usuario también puede interrumpir manualmente el proceso usando _CTRL+C_.
