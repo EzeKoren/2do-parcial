@@ -46,3 +46,29 @@
 		}
 	}
     ```
+2. Un proceso se puede interrumpir de numerosas maneras, y cada una de ellas emite una señal distinta. Entre las señales más comunes se encuentran `SIGTERM`, `SIGINT` y `SIGKILL`. Estas se pueden escuchar con un signal handler, igual que en ejemplo anterior, con excepción del `SIGKILL`, el cual mata instantáneamente el proceso, sin dar tiempo a interpretar la señal.
+3.  .
+    ```mermaid
+    graph TD
+    subgraph SERVER
+        s1["socket()"]
+        s1 --> s2["bind()"]
+        s2 --> s3["listen()"]
+        s3 --> s4["accept()"]
+        s4 --> s5["read() y espera"]
+        s5 --> s6[["Procesar request"]]
+        s6 --> s7["write()"]
+        s7 --> s8["close()"]
+    end
+    subgraph CLIENT
+        c1["socket()"]
+        c1 --> c2["connect()"]
+        c2 --> c3["write()"]
+        c3 --> c4["read() y espera"]
+        c4 --> c5["close()"]
+    end
+    c2 -- Se conecta --> s4
+    c3 -- Request --> s5
+    s7 -- Response --> c4    
+    c5 -- Fin de conexión --> s8 
+    ```
