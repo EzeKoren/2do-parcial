@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ej1": "ts-node src/ej1/index.ts"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/EzeKoren/2do-parcial#readme",
   "dependencies": {
+    "ts-node": "^10.4.0",
     "typescript": "^4.5.2"
   },
   "devDependencies": {
