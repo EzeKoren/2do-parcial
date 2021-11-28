@@ -16,6 +16,10 @@ Igual me estoy cambiando de carrera, igual me estoy cambiando de institución, i
 
 Total me estoy yendo, mejor irme con un *bang*.
 
+## ¿Y por qué Typescript y no Javascript solo?
+
+Tenía ganas de joder el doble
+
 ## ¿Ok cómo lo ejecuto?
 
 ``` bash
