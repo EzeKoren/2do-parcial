@@ -6,7 +6,9 @@
   "scripts": {
     "ej1": "ts-node src/ej1/index.ts",
     "ej2": "ts-node src/ej2/index.ts",
-    "ej3": "ts-node src/ej3/index.ts"
+    "ej3": "ts-node src/ej3/index.ts",
+	"ej4": "echo ajajajja este no lo hice",
+	"ej5": "echo son casi las 2 de la mañana, y posta no entiendo los ejercicios 4 y 5. No valen la pena para una joda"
   },
   "repository": {
     "type": "git",
