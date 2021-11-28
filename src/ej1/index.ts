@@ -14,9 +14,10 @@ const load_conf = (fileName: string) => {
 		backLog: <any>undefined,
 		archStr: <any>undefined
 	}
-	let file = fs.readFileSync(fileName,'utf8');
-	let file2 = file.split("\r\n");
-	file2.forEach((obj:any) => {
+	fs
+		.readFileSync(fileName,'utf8')
+		.split("\r\n")
+		.forEach((obj:any) => {
 		const v = obj.split("=");
 		switch(v[0]) {
 			case "PORT": {
