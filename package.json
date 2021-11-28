@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ej1": "ts-node src/ej1/index.ts"
+    "ej1": "ts-node src/ej1/index.ts",
+    "ej2": "ts-node src/ej2/index.ts"
   },
   "repository": {
     "type": "git",
